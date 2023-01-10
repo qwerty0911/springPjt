@@ -2,10 +2,7 @@ package com.example.hellospring.service;
 
 import com.example.hellospring.domain.Member;
 import com.example.hellospring.repository.MemberRepository;
-import com.example.hellospring.repository.MemoryMemberRepository;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest //스프링 컨테이너와 테스트를 함꼐 실행
 @Transactional //테스트 끝나로 롤백해줌
-public class MemberServiceIntegrarionTest {
+public class MemberServiceIntegrationTest {
 
     @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository;
